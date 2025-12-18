@@ -1,6 +1,6 @@
-import {Paper, Box, Typography, IconButton, RadioGroup, FormControlLabel, Radio} from '@mui/material';
+import {Paper, Box, Typography, IconButton } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
-import {RequisitesRadioBlock} from "./RequisitesRadioBlock";
+import { RequisitesRadioBlock } from "./RequisitesRadioBlock";
 
 type RequisitesFieldProps = {
     label: string;
@@ -12,9 +12,7 @@ export const RequisitesField = ({ label, id }: RequisitesFieldProps) => {
         <Paper
             variant="outlined"
         >
-            { id === 1 && (
-                <RequisitesRadioBlock/>
-            )}
+            { id === 1 && <RequisitesRadioBlock/>}
             <Box display="flex" justifyContent="space-between" margin="15px">
                 <Typography variant="body1">{label}</Typography>
                 <IconButton size="small">
