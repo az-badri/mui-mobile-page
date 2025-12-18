@@ -9,15 +9,14 @@ import {
 } from '@mui/material';
 
 import { SegmentedControl } from '../components/SegmentedControl';
-import { SectionCard } from '../components/SectionCard';
 import { CurrencyInput } from '../components/CurrencyInput';
 import { TextInput } from '../components/TextInput';
+import {AccountSelect} from "../components/AccountSelect";
 
 export const WithdrawPage = () => {
     return (
         <Container maxWidth="sm">
             <Box py={2} display="flex" flexDirection="column" gap={3}>
-                {/* Способ вывода */}
                 <Box>
                     <Typography variant="h6" mb={2}>
                         Способ вывода
@@ -25,13 +24,8 @@ export const WithdrawPage = () => {
                     <SegmentedControl />
                 </Box>
 
-                {/* Банк */}
-                <SectionCard
-                    title="Альфа-банк cash-in"
-                    subtitle="1 USDT = 61.55 RUR"
-                />
+                <AccountSelect />
 
-                {/* Объемы */}
                 <Box>
                     <Typography mb={2}>Объемы</Typography>
 
@@ -59,7 +53,6 @@ export const WithdrawPage = () => {
                     </Box>
                 </Box>
 
-                {/* Реквизиты */}
                 <Box>
                     <Typography mb={2}>Реквизиты</Typography>
 
