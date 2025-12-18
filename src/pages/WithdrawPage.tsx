@@ -12,6 +12,7 @@ import { TextInput } from '../components/TextInput';
 import { AccountSelect } from "../components/AccountSelect";
 import { AmountSection } from "../components/AmountSection";
 import { SegmentedBar } from "../components/SegmentedBar";
+import {RequisitesHeader} from "../components/RequisitesHeader";
 
 export const WithdrawPage = () => {
     return (
@@ -36,18 +37,16 @@ export const WithdrawPage = () => {
                 </Box>
 
                 <Box>
-                    <Typography variant="h6" mb={2}>
-                        Реквизиты
-                    </Typography>
+                    <RequisitesHeader/>
                     <RadioGroup row>
                         <FormControlLabel
                             value="card"
-                            control={<Radio />}
+                            control={<Radio color='warning' />}
                             label="Номер карты"
                         />
                         <FormControlLabel
                             value="contract"
-                            control={<Radio />}
+                            control={<Radio color="warning" />}
                             label="Номер договора"
                         />
                     </RadioGroup>
