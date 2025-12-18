@@ -12,7 +12,8 @@ import { TextInput } from '../components/TextInput';
 import { AccountSelect } from "../components/AccountSelect";
 import { AmountSection } from "../components/AmountSection";
 import { SegmentedBar } from "../components/SegmentedBar";
-import {RequisitesHeader} from "../components/RequisitesHeader";
+import {RequisitesHeader} from "../components/Requisites/RequisitesHeader";
+import {RequisitesList} from "../components/Requisites/RequsitesList";
 
 export const WithdrawPage = () => {
     return (
@@ -38,24 +39,7 @@ export const WithdrawPage = () => {
 
                 <Box>
                     <RequisitesHeader/>
-                    <RadioGroup row>
-                        <FormControlLabel
-                            value="card"
-                            control={<Radio color='warning' />}
-                            label="Номер карты"
-                        />
-                        <FormControlLabel
-                            value="contract"
-                            control={<Radio color="warning" />}
-                            label="Номер договора"
-                        />
-                    </RadioGroup>
-
-                    <Box display="flex" flexDirection="column" gap={2} mt={2}>
-                        <TextInput placeholder="Номер карты" />
-                        <TextInput placeholder="ФИО владельца" />
-                        <TextInput placeholder="Адрес" />
-                    </Box>
+                    <RequisitesList/>
                 </Box>
             </Box>
         </Container>
