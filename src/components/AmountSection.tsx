@@ -1,5 +1,5 @@
-import {Box, Typography} from "@mui/material";
-import {CurrencyInput} from "./CurrencyInput";
+import { Box, Typography } from "@mui/material";
+import { CurrencyInput } from "./CurrencyInput";
 
 export const AmountSection = () =>{
     return (

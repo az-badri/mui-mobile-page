@@ -1,4 +1,4 @@
-import {Box, FormControlLabel, Radio, RadioGroup} from "@mui/material";
+import { Box, FormControlLabel, Radio, RadioGroup } from "@mui/material";
 
 export const RequisitesRadioBlock = () => {
     return (

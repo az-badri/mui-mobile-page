@@ -10,7 +10,7 @@ const editableFields = [
 export const RequisitesList = () => {
     return (
         <Box display="flex" flexDirection="column" gap={2} mt={2}>
-            {editableFields.map((field, index) => (
+            {editableFields.map((field) => (
                 <RequisitesField key={field.id} label={field.label} id={field.field_id}/>
             ))}
         </Box>

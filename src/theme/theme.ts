@@ -40,6 +40,7 @@ export const theme = createTheme({
     },
 
     components: {
+
         MuiButton: {
             styleOverrides: {
                 root: {
@@ -49,7 +50,20 @@ export const theme = createTheme({
                     fontWeight: 500,
                 },
             },
+            variants: [
+                {
+                    // @ts-ignore
+                    props: { variant: 'text', color: 'white' },
+                    style: {
+                        backgroundColor: '#fff',
+                        '&:hover': {
+                            backgroundColor: '#fff',
+                        },
+                    },
+                },
+            ],
         },
+
 
         MuiPaper: {
             styleOverrides: {

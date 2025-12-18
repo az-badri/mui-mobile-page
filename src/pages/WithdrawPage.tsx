@@ -2,18 +2,14 @@ import {
     Box,
     Container,
     Typography,
-    Radio,
-    RadioGroup,
-    FormControlLabel,
 } from '@mui/material';
 
 import { SegmentedControl } from '../components/SegmentedControl';
-import { TextInput } from '../components/TextInput';
 import { AccountSelect } from "../components/AccountSelect";
 import { AmountSection } from "../components/AmountSection";
 import { SegmentedBar } from "../components/SegmentedBar";
-import {RequisitesHeader} from "../components/Requisites/RequisitesHeader";
-import {RequisitesList} from "../components/Requisites/RequsitesList";
+import { RequisitesHeader } from "../components/Requisites/RequisitesHeader";
+import { RequisitesList } from "../components/Requisites/RequsitesList";
 
 export const WithdrawPage = () => {
     return (
@@ -25,18 +21,14 @@ export const WithdrawPage = () => {
                     </Typography>
                     <SegmentedControl />
                 </Box>
-
                 <AccountSelect />
-
                 <Box>
                     <Typography variant="h6" mb={2}>
                         Объемы
                     </Typography>
-
                     <AmountSection />
                     <SegmentedBar/>
                 </Box>
-
                 <Box>
                     <RequisitesHeader/>
                     <RequisitesList/>
