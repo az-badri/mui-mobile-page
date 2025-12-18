@@ -20,6 +20,7 @@ export const theme = createTheme({
     },
 
     palette: {
+
         background: {
             default: '#F5F5F7',
             paper: '#FFFFFF',
@@ -116,8 +117,30 @@ export const theme = createTheme({
                             boxShadow: 'inset 0 0 0 3px gold',
                             '& .MuiSvgIcon-root': {
                                 color: 'gold',
-                                fontSize: '18px',
+                                fontSize: '20px',
                             },
+                        },
+                    },
+                },
+            },
+        },
+
+
+        MuiRadio: {
+            styleOverrides: {
+                root: {
+                    margin: '5px',
+                    padding: 0,
+                    '&.MuiRadio-colorGoldDot': {
+                        color: 'black',
+                        '&.Mui-checked': {
+                            color: 'gold',
+                            '& .MuiSvgIcon-root': {
+                                backgroundColor: 'gold',
+                                color: 'black',
+                                borderRadius: '50%',
+                            },
+                            boxShadow: 'inset 0 0 0 7px gold',
                         },
                     },
                 },

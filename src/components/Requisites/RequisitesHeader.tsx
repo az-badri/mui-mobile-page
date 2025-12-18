@@ -6,7 +6,7 @@ export const RequisitesHeader = () => (
             Реквизиты
         </Typography>
         <Box className="RequisitesOption-right" display="flex" flexDirection="row" alignItems="center">
-            <Typography className="RequisitesOption-label">
+            <Typography className="RequisitesOption-label" color='gray'>
                 Сохранить реквизиты
             </Typography>
             <Checkbox
