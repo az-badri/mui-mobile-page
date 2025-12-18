@@ -10,9 +10,10 @@ export const RequisitesHeader = () => (
                 Сохранить реквизиты
             </Typography>
             <Checkbox
-                color="warning"
                 defaultChecked
                 className="RequisitesOption-checkbox"
+                // @ts-ignore
+                color="yellowCheck"
             />
         </Box>
     </Box>

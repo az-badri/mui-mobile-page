@@ -8,7 +8,6 @@ export const RequisitesRadioBlock = () => {
                     value="card"
                     control={<Radio color='warning' />}
                     label="Номер карты"
-                    checked
                 />
                 <FormControlLabel
                     value="contract"

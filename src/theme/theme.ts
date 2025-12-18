@@ -101,5 +101,27 @@ export const theme = createTheme({
             },
         },
 
+        MuiCheckbox: {
+            styleOverrides: {
+                root: {
+                    margin: '5px',
+                    padding: 0,
+                    minWidth: 'auto',
+                    '&.MuiCheckbox-colorYellowCheck': {
+                        '&.Mui-checked': {
+                            margin: '7px',
+                            color: 'gold',
+                            backgroundColor: 'black',
+                            borderRadius: '4px',
+                            boxShadow: 'inset 0 0 0 3px gold',
+                            '& .MuiSvgIcon-root': {
+                                color: 'gold',
+                                fontSize: '18px',
+                            },
+                        },
+                    },
+                },
+            },
+        },
     },
 });
