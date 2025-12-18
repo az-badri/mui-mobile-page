@@ -1,4 +1,4 @@
-import { Box, IconButton, InputBase, Typography } from '@mui/material';
+import {Box, IconButton, InputBase, Paper, Typography} from '@mui/material';
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 
@@ -10,26 +10,36 @@ interface Props {
 export const CurrencyInput = ({ label, value }: Props) => {
     return (
         <Box width="100%">
-            <Typography variant="caption">{label}</Typography>
-
+            <Paper
+                elevation={0}
+            >
             <Box
                 mt={1}
                 display="flex"
                 alignItems="center"
-                bgcolor="#F2F2F7"
-                borderRadius={2}
                 px={1}
+                flexDirection='column'
             >
-                <IconButton size="small">
-                    <RemoveIcon />
-                </IconButton>
+                <Typography variant="caption">{label}</Typography>
+                <Box display='flex' flexDirection='row' gap={1} alignItems='center'>
+                    <Box borderRadius={2} bgcolor="#F2F2F7" margin={1}>
+                      <IconButton size="small">
+                      <RemoveIcon />
+                      </IconButton>
+                    </Box>
 
-                <InputBase value={value} sx={{ flex: 1 }} />
+                    <Box>
+                        <InputBase value={value} sx={{ flex: 1 }} />
+                    </Box>
+                    <Box borderRadius={2} bgcolor="#F2F2F7" margin={1}>
+                        <IconButton size="small" >
+                            <AddIcon  />
+                        </IconButton>
+                    </Box>
+                </Box>
 
-                <IconButton size="small">
-                    <AddIcon />
-                </IconButton>
             </Box>
+            </Paper>
         </Box>
     );
 };

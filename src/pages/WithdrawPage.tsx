@@ -9,9 +9,9 @@ import {
 } from '@mui/material';
 
 import { SegmentedControl } from '../components/SegmentedControl';
-import { CurrencyInput } from '../components/CurrencyInput';
 import { TextInput } from '../components/TextInput';
 import {AccountSelect} from "../components/AccountSelect";
+import {AmountSection} from "../components/AmountSection";
 
 export const WithdrawPage = () => {
     return (
@@ -27,18 +27,11 @@ export const WithdrawPage = () => {
                 <AccountSelect />
 
                 <Box>
-                    <Typography mb={2}>Объемы</Typography>
+                    <Typography variant="h6" mb={2}>
+                        Объемы
+                    </Typography>
 
-                    <Box display="flex" gap={2}>
-                        <CurrencyInput
-                            label="Ethereum, ETH"
-                            value="1300.00000"
-                        />
-                        <CurrencyInput
-                            label="Рубль, RUR"
-                            value="1200.00"
-                        />
-                    </Box>
+                    <AmountSection />
 
                     <Box display="flex" gap={1} mt={2}>
                         {['min', '50%', '75%', 'max'].map((item, i) => (
@@ -54,8 +47,9 @@ export const WithdrawPage = () => {
                 </Box>
 
                 <Box>
-                    <Typography mb={2}>Реквизиты</Typography>
-
+                    <Typography variant="h6" mb={2}>
+                        Реквизиты
+                    </Typography>
                     <RadioGroup row>
                         <FormControlLabel
                             value="card"
