@@ -29,7 +29,7 @@ export const CurrencyInput = ({ label, value }: Props) => {
                     </Box>
 
                     <Box>
-                        <InputBase value={value} sx={{ flex: 1 }} />
+                        <InputBase value={value}  />
                     </Box>
                     <Box borderRadius={2} bgcolor="#F2F2F7" margin={1}>
                         <IconButton size="small" >

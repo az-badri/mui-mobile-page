@@ -8,7 +8,7 @@ export const SegmentedControl = () => {
             {items.map((item, index) => (
                 <Button
                     key={item}
-                    variant={index === 0 ? 'contained' : 'outlined'}
+                    variant={index === 0 ? 'contained' : 'text'}
                 >
                     {item}
                 </Button>

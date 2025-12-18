@@ -69,5 +69,22 @@ export const theme = createTheme({
                 },
             },
         },
+
+        MuiLinearProgress: {
+            styleOverrides: {
+                root: {
+                    height: 10,
+                    borderRadius: 5,
+                    flex: 1,
+                },
+                // @ts-ignore
+                barColorWhite: {
+                    backgroundColor: '#fff',
+                },
+                barColorBlack: {
+                    backgroundColor: '#000',
+                },
+            },
+        },
     },
 });

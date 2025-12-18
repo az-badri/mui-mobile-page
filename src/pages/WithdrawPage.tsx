@@ -2,7 +2,6 @@ import {
     Box,
     Container,
     Typography,
-    Button,
     Radio,
     RadioGroup,
     FormControlLabel,
@@ -10,8 +9,9 @@ import {
 
 import { SegmentedControl } from '../components/SegmentedControl';
 import { TextInput } from '../components/TextInput';
-import {AccountSelect} from "../components/AccountSelect";
-import {AmountSection} from "../components/AmountSection";
+import { AccountSelect } from "../components/AccountSelect";
+import { AmountSection } from "../components/AmountSection";
+import { SegmentedBar } from "../components/SegmentedBar";
 
 export const WithdrawPage = () => {
     return (
@@ -32,18 +32,7 @@ export const WithdrawPage = () => {
                     </Typography>
 
                     <AmountSection />
-
-                    <Box display="flex" gap={1} mt={2}>
-                        {['min', '50%', '75%', 'max'].map((item, i) => (
-                            <Button
-                                key={item}
-                                fullWidth
-                                variant={i === 1 ? 'contained' : 'outlined'}
-                            >
-                                {item}
-                            </Button>
-                        ))}
-                    </Box>
+                    <SegmentedBar/>
                 </Box>
 
                 <Box>
