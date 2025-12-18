@@ -6,13 +6,11 @@ export const RequisitesRadioBlock = () => {
             <RadioGroup row>
                 <FormControlLabel
                     value="card"
-                    // @ts-ignore
                     control={<Radio color="goldDot" />}
                     label="Номер карты"
                 />
                 <FormControlLabel
                     value="contract"
-                    // @ts-ignore
                     control={<Radio color="goldDot" />}
                     label="Номер договора"
                 />

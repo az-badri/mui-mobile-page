@@ -3,7 +3,11 @@ import { CurrencyInput } from "./CurrencyInput";
 
 export const AmountSection = () =>{
     return (
-        <Box display="flex" flexDirection="row" gap={2}>
+        <Box>
+            <Typography variant="h6" mb={2}>
+                Объемы
+            </Typography>
+            <Box display="flex" flexDirection="row" gap={2}>
                 <Box>
                     <Typography variant="caption">Отдаете(лот 1000)</Typography>
                     <CurrencyInput
@@ -18,7 +22,7 @@ export const AmountSection = () =>{
                         value="1200.00"
                     />
                 </Box>
-
+            </Box>
         </Box>
     )
 }

@@ -12,7 +12,6 @@ export const RequisitesHeader = () => (
             <Checkbox
                 defaultChecked
                 className="RequisitesOption-checkbox"
-                // @ts-ignore
                 color="yellowCheck"
             />
         </Box>
