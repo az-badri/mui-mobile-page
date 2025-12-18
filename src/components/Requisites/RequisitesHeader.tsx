@@ -5,7 +5,7 @@ export const RequisitesHeader = () => (
         <Typography variant="h6" mb={2}>
             Реквизиты
         </Typography>
-        <Box className="RequisitesOption-right" display="flex" flexDirection="row" alignItems="center">
+        <Box className="RequisitesOption-right" display="flex" flexDirection="row" alignItems="center" justifyContent='end'>
             <Typography className="RequisitesOption-label" color='gray'>
                 Сохранить реквизиты
             </Typography>
