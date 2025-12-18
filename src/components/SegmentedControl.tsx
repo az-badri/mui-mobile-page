@@ -9,7 +9,6 @@ export const SegmentedControl = () => {
             {items.map((item, index) => (
                 <Button
                     key={item}
-                    // @ts-ignore
                     color={isBank(index) ? 'primary' : 'white' }
                     variant={isBank(index) ? 'contained' : "text"}
                 >

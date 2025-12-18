@@ -53,7 +53,6 @@ export const theme = createTheme({
             },
             variants: [
                 {
-                    // @ts-ignore
                     props: { variant: 'text', color: 'white' },
                     style: {
                         backgroundColor: '#fff',
